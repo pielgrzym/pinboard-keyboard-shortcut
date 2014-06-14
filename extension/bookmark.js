@@ -20,7 +20,7 @@ chrome.commands.onCommand.addListener(function(command) {
                 // is received
                 chrome.tabs.create({
                                 url: 'https://pinboard.in/add?url=' + encodeURI(tab.url) + '&title=' + encodeURI(tab.title) +
-                                '&description=' + encodeURIComponent(description),
+                                '&description=' + encodeURIComponent(description) + "&tags=inbox",
                                 index: tab.index,
                             });
 
